@@ -26,6 +26,8 @@ The user supplied the gym name, owner **Mohd Ahmad**, and trainer **Muzammil**. 
 
 Source: https://www.instagram.com/chaudharyfitnesshouse/
 
+Google Maps location supplied by the user: https://maps.app.goo.gl/sHrpRWgcK8YiXVgt5. Linked from the contact section and visiting FAQ, and included as `hasMap` in the gym’s structured data.
+
 The following images were downloaded from the supplied public profile with the user’s permission and are served locally to avoid expiring CDN links:
 
 - `gym-floor.jpg`: https://www.instagram.com/chaudharyfitnesshouse/reel/DUn0mC0D9pC/
