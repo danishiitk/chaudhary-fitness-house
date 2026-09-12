@@ -43,8 +43,15 @@ The gallery is a curated snapshot, not an automatically updating Instagram feed.
 - Copy, contact details, form options, and structured data: `index.html`.
 - Colors, typography, and responsive layout: `styles.css`.
 - Mobile navigation, goal selection, privacy disclosure, and local form preview: `app.js`.
+- English/Hindi translations and switching: `language.js`. Text marked with `data-i18n` uses its English wording as the translation key; update both the key and fallback text when changing copy, then add the corresponding Hindi translation. Attribute translations use `data-i18n-alt`, `data-i18n-placeholder`, etc.
 - Photos and favicon: `assets/`.
 - Once a final domain is available, add a canonical URL and make `og:image` an absolute URL for the widest social preview compatibility.
 - Confirm exact address, hours, membership pricing, and enquiry retention practices with the gym when adding them.
 
 The site uses Google Fonts with local system fallbacks. No Instagram tracking script or live embed is loaded. Visitor enquiries are processed by Netlify; the page includes a short privacy disclosure and contact consent.
+
+## Hindi language support
+
+The header has an **EN / हिंदी** switch. English is the default; a visitor’s selection is saved in their browser under `cfh-language` and reused on the homepage, confirmation page, and 404 page. Switching languages keeps entered form data intact. Hindi includes navigation, content, labels, options, validation messages, image descriptions, and page titles, with Devanagari fonts and adjusted responsive spacing.
+
+Form field names and goal values remain stable in both languages for Netlify. A hidden `preferred-language` field submits `en` or `hi` so the team knows the visitor’s preference. Redeploy after enabling form detection for Netlify to register this additional field. Language switching runs in the browser without a translation service or API key. If JavaScript is disabled, the English content remains usable.
